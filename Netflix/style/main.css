@@ -1,0 +1,221 @@
+:root {
+   --vermelho: #E50914;
+   --preto: #141414;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: var(--preto);
+   font-family: 'Arial', Times, serif;
+   color: #FFF;
+}
+
+a {
+   text-decoration: none;
+   color: #FFF;
+}
+
+header .container {
+   display: flex;
+   flex-direction: row; /*default*/
+   align-items: center;
+   justify-content: space-between;
+}
+
+header .logo {
+   color: var(--vermelho);
+   font-family: 'Arial Black', Times;
+   font-size: 40px;
+   margin-left: 5px;
+}
+
+header .logo a {
+   text-decoration: none;
+   color: var(--vermelho);
+}
+
+header nav a {
+   text-decoration: none;
+   color: #AAA;
+   margin-right: 10px;
+}
+
+header nav a:hover {
+   color: #FFF;
+}
+
+header nav .memefy {
+   color: var(--vermelho);
+}
+
+.container {
+   margin-left: 20px;
+}
+
+/*filme principal*/
+
+.filme-principal .container {
+   width: 55%;
+}
+
+.filme-principal {
+   font-size: 16px;
+   background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-theWitcher.jpg');
+   height: 500px;
+   background-size: cover;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.filme-principal .descricao {
+   margin-top: 10px;
+   margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+   font-size: 40px;
+   font-family: 'Times New Roman', Times, serif;
+
+   margin-top: 8%;
+}
+
+.filme-principal .botao {
+   background-color: rgba(0,0,0,.50);
+   border: none;
+   color: #FFF;
+
+   padding: 15px 30px;
+   margin-right: 15px;
+   margin-bottom: 5px;
+
+   font-size: 12px;
+
+   cursor: pointer;
+   transition: .3s ease all;
+
+   width: 300px;
+}
+
+.filme-principal .botao:hover {
+   background-color: #FFF;
+   color: #000;
+}
+
+.filme-principal .botao:hover a {
+   color: #000;
+}
+
+.filme-principal .botao i {
+   margin-right: 8px;
+}
+
+/*carrosel*/
+
+.box-filme {
+   height: 100%;
+   width: 100%;
+   display: block;
+}
+
+.carrosel-filmes {
+   margin-top: 5px;
+}
+
+/*assista-agora*/
+
+.container-video {
+   position: relative;
+   background: #000;
+   width: 100%;
+   height: 850px;
+}
+
+.container-video iframe {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+
+/*mais informação*/
+.bg-info {
+   background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/bgInfo.jpg');
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   display: table;
+}
+
+.info .container {
+   width: 55%;
+}
+
+.info {
+   font-size: 16px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-left: 20%;
+}
+
+.info .descricao {
+   margin-top: 10px;
+   margin-bottom: 40px;
+}
+
+.info .titulo {
+   font-size: 40px;
+   font-family: 'Times New Roman', Times, serif;
+
+   margin-top: 8%;
+   margin-bottom: 30px;
+}
+
+.info .botao {
+   background-color: rgba(0,0,0,.50);
+   border: none;
+   color: #FFF;
+;
+   padding: 15px 30px;
+   margin-right: 15px;
+   margin-bottom: 5px;
+
+
+   font-size: 12px;
+
+   cursor: pointer;
+   transition: .3s ease all;
+
+   width: 300px;
+}
+
+.info .botao:hover {
+   background-color: #FFF;
+   color: #000;
+}
+
+.info .botao:hover a {
+   color: #000;
+}
+
+.info .botao i {
+   margin-right: 8px;
+}
+
+.info .personagens h4 {
+   margin: 5px;
+   margin-top: 20px;
+}
+
+.info .personagens ul li{
+   padding: 5px;
+}
